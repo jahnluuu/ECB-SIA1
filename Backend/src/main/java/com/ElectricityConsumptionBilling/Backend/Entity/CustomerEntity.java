@@ -1,4 +1,4 @@
-package com.ElectricityConsumptionBilling.Entity;
+package com.ElectricityConsumptionBilling.Backend.Entity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

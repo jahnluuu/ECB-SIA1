@@ -1,4 +1,4 @@
-package com.ElectricityConsumptionBilling.Controller;
+package com.ElectricityConsumptionBilling.Backend.Controller;
 
 import java.util.List;
 
@@ -16,10 +16,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.ElectricityConsumptionBilling.DTO.Login;
-import com.ElectricityConsumptionBilling.DTO.Signup;
-import com.ElectricityConsumptionBilling.Entity.CustomerEntity;
-import com.ElectricityConsumptionBilling.Service.CustomerService;
+import com.ElectricityConsumptionBilling.Backend.DTO.Login;
+import com.ElectricityConsumptionBilling.Backend.DTO.Signup;
+import com.ElectricityConsumptionBilling.Backend.Entity.CustomerEntity;
+import com.ElectricityConsumptionBilling.Backend.Service.CustomerService;
 
 @RestController
 @RequestMapping("/api/ElectricityConsumptionBilling/customer")

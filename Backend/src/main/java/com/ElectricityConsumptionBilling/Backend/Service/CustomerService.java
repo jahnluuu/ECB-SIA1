@@ -1,4 +1,4 @@
-package com.ElectricityConsumptionBilling.Service;
+package com.ElectricityConsumptionBilling.Backend.Service;
 
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -7,10 +7,10 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.ElectricityConsumptionBilling.DTO.Login;
-import com.ElectricityConsumptionBilling.DTO.Signup;
-import com.ElectricityConsumptionBilling.Entity.CustomerEntity;
-import com.ElectricityConsumptionBilling.Repository.CustomerRepository;
+import com.ElectricityConsumptionBilling.Backend.DTO.Login;
+import com.ElectricityConsumptionBilling.Backend.DTO.Signup;
+import com.ElectricityConsumptionBilling.Backend.Entity.CustomerEntity;
+import com.ElectricityConsumptionBilling.Backend.Repository.CustomerRepository;
 
 @Service
 public class CustomerService {
@@ -33,7 +33,7 @@ public class CustomerService {
     }
 
     public CustomerEntity updateProfile(int id, CustomerEntity updatedProfile) {
-        CustomerEntity customer = crepo.findbyCustomerId(id);
+        CustomerEntity customer = crepo.findByCustomerId(id);
         if (customer == null) {
             throw new NoSuchElementException("Customer not found");
         }

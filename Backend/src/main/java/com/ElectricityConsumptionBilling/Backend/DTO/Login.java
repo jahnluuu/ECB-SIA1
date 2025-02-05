@@ -1,4 +1,4 @@
-package com.ElectricityConsumptionBilling.DTO;
+package com.ElectricityConsumptionBilling.Backend.DTO;
 
 public class Login {
     private String email;
